@@ -2,7 +2,7 @@
   <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
     <div class="flex-1 bg-white p-6">
       <h3 class="mt-2 text-xl leading-7 font-semibold text-gray-900">
-        <a :href="`https://github.com/${user}/${repo}`" class="flex items-center">
+        <a :href="`https://github.com/${repo}`" class="flex items-center">
 
           <svg
             fill="none"
