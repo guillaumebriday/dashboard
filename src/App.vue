@@ -5,7 +5,7 @@
         <Card
           v-for="project in projects"
           :project="project"
-          :user="user"
+          :user="project.user || user"
           :key="project.name"
         />
     </div>
@@ -99,7 +99,31 @@ export default {
         { name: 'rails-tailwindcss-starter' },
         { name: 'traefik-file-config-example' },
         { name: 'insomnia-telegram-workspace' },
-        { name: 'homelab-docker-ansible' }
+        { name: 'homelab-docker-ansible' },
+        { name: 'stimulus-content-loader', npm: 'stimulus-content-loader', user: 'stimulus-components' },
+        { name: 'stimulus-textarea-autogrow', npm: 'stimulus-textarea-autogrow', user: 'stimulus-components' },
+        { name: 'stimulus-checkbox-select-all', npm: 'stimulus-checkbox-select-all', user: 'stimulus-components' },
+        { name: 'stimulus-rails-nested-form', npm: 'stimulus-rails-nested-form', user: 'stimulus-components' },
+        { name: 'stimulus-reveal-controller', npm: 'stimulus-reveal-controller', user: 'stimulus-components' },
+        { name: 'stimulus-timeago', npm: 'stimulus-timeago', user: 'stimulus-components' },
+        { name: 'stimulus-sortable', npm: 'stimulus-sortable', user: 'stimulus-components' },
+        { name: 'stimulus-popover', npm: 'stimulus-popover', user: 'stimulus-components' },
+        { name: 'stimulus-remote-rails', npm: 'stimulus-remote-rails', user: 'stimulus-components' },
+        { name: 'stimulus-character-counter', npm: 'stimulus-character-counter', user: 'stimulus-components' },
+        { name: 'stimulus-animated-number', npm: 'stimulus-animated-number', user: 'stimulus-components' },
+        { name: 'stimulus-lightbox', npm: 'stimulus-lightbox', user: 'stimulus-components' },
+        { name: 'stimulus-scroll-progress', npm: 'stimulus-scroll-progress', user: 'stimulus-components' },
+        { name: 'stimulus-carousel', npm: 'stimulus-carousel', user: 'stimulus-components' },
+        { name: 'stimulus-rails-autosave', npm: 'stimulus-rails-autosave', user: 'stimulus-components' },
+        { name: 'stimulus-scroll-to', npm: 'stimulus-scroll-to', user: 'stimulus-components' },
+        { name: 'stimulus-chartjs', npm: 'stimulus-chartjs', user: 'stimulus-components' },
+        { name: 'stimulus-prefetch', npm: 'stimulus-prefetch', user: 'stimulus-components' },
+        { name: 'stimulus-clipboard', npm: 'stimulus-clipboard', user: 'stimulus-components' },
+        { name: 'stimulus-read-more', npm: 'stimulus-read-more', user: 'stimulus-components' },
+        { name: 'stimulus-scroll-reveal', npm: 'stimulus-scroll-reveal', user: 'stimulus-components' },
+        { name: 'stimulus-places-autocomplete', npm: 'stimulus-places-autocomplete', user: 'stimulus-components' },
+        { name: 'stimulus-notification', npm: 'stimulus-notification', user: 'stimulus-components' },
+        { name: 'stimulus-dropdown', npm: 'stimulus-dropdown', user: 'stimulus-components' },
       ]
     }
   }
